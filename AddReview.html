@@ -1,0 +1,63 @@
+<html lang="en">
+	<?php
+	session_start();
+	?>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="moviebox" content="movie ratings, movie lists, genre">
+		<link href="img/favicon.png" rel="shortcut icon">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- CSS style -->
+
+		<title>Add Review!</title>
+	</head>
+	<body>
+		<header role="banner">
+			<div id="cd-logo">
+				<a href="#0"><img src="img/logo.png" alt="Logo"></a>
+			</div>
+
+			<nav class="main-nav">
+				<ul>
+					<!-- inser more links here -->
+					<li>
+						<a class="cd-signup" id="btnLogout" href="#0">Logout</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="bcgrnd">
+			<h2 class="bold-red">Add Review</h2>
+			<br>
+			<form>
+				Movie Title:
+				<br>
+				<input id="title" type="text" name="title">
+				<br>
+				<br>
+				Movie Review:
+				<br>
+				<textarea id="review" name="review" rows="4" cols="50"></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Submit" id="btnSubmit" onclick="AddReview()">
+			</form>
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- jQuery -->
+	<script>
+		function AddReview() {
+			var mTitle = document.getElementById('title').value;
+			var mReview = document.getElementById('review').value;
+			alert("Movie Review Added.!");
+			location.href = '/UserLogin.html';
+		};
+	</script>
+	</body>
+</html>

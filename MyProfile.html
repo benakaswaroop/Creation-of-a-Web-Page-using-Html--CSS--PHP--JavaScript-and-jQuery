@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<?php
+	session_start();
+	?>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="moviebox" content="movie ratings, movie lists, genre">
+		<link href="img/favicon.png" rel="shortcut icon">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- CSS style -->
+
+		<title>My Profile!</title>
+		<style>
+			tbody:hover td {
+				color: transparent;
+				text-shadow: 0 0 3px #aaa;
+			}
+
+			tbody:hover tr:hover td {
+				color: #444;
+				text-shadow: 0 1px 0 #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header role="banner">
+			<div id="cd-logo">
+				<a href="#0"><img src="img/logo.png" alt="Logo"></a>
+			</div>
+
+			<nav class="main-nav">
+				<ul>
+					<!-- inser more links here -->
+					<!-- <li><a class="cd-signin" id="btnProfile" href="MyProfile.html">My Profile</a></li> -->
+					<li>
+						<a class="cd-signup" id="btnLogout" href="#0">Logout</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="bcgrnd">
+			<h2 class="bold-red">My Profile</h2>
+			<br>
+			<table border="1" style="width:100%">
+				<tr>
+					<th>Title</th>
+					<th>Genre</th>
+					<th>Rating</th>
+				</tr>
+				<tr>
+					<td>Notebook</td>
+					<td>Romance</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Avengers</td>
+					<td>Action</td>
+					<td>4.5</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- jQuery -->
+	</body>
+</html>
